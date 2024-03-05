@@ -5,6 +5,22 @@ import './App.css'
 
 function App() {
 
+  const [tasks, setTasks] = useState([
+    {
+      idTask: '1',
+      nameTask: 'Bañarse'
+    },
+    {
+      idTask: '2',
+      nameTask: 'Hacer tareas del sena'
+    },
+    {
+      idTask:'3',
+      nameTask: 'Subir a challenger'
+    }
+  ]);
+
+
   return (
     <>
       <div>
@@ -12,9 +28,13 @@ function App() {
         <button className='buttonTask'>Crear</button>
       </div>
       <hr className='separator' />
+
       <div className='taskDiv'>
-        <p className='pTask'>bañarse</p>
-        <p className='pTask'>hacer tareas del sena</p>
+
+        {tasks.map(item => (
+         console.log(item.nameTask)
+        ))}
+
       </div>
     </>
   )
