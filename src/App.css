@@ -1,9 +1,4 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+
 .inputTask{
   height: 2rem;
   width: 20rem;
@@ -20,6 +15,7 @@
   background-color: grey;
   font-size: 1.5rem;
   border-radius: 5px;
+  margin-top: 0.2rem;
 }
 .separator{
   width: 50vw;
