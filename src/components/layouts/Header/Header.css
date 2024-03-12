@@ -1,4 +1,19 @@
 header{
     width: 100%;
-    margin-top: 2rem;
+    background: #a477ff;
+}
+.titleHeader{
+    font-size: 2.5rem;
+    width: 58%;
+    padding-top: 3rem;
+    float: left;
+    text-align: end;
+}
+.logo{
+    width: 10rem;
+    float: right;
+    position: static;
+}
+.clear{
+    clear: both;
 }

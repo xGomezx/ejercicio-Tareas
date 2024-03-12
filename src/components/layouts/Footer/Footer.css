@@ -1,0 +1,10 @@
+footer{
+    background: #a477ff;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 3rem;
+}

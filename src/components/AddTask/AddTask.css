@@ -1,23 +1,13 @@
-.container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
-}
 .DivAddTask{
     display: flex;
-    flex-flow: column wrap;
-    width: 25%;
-    height: 15rem;
-    margin-top: 1rem;
-    border: double gray 5px;
-    border-collapse: separate;
-    border-spacing: 20px;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 1rem 0;
     align-items: center;
 }
 
 .titleTask{
-    width: 85%;
+    width: 15rem;
     height: 1.7rem;
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -25,8 +15,8 @@
 }
 .DesTask{
     margin-top: 1rem;
-    width: 85%;
-    height: 70%;
+    width: 20rem;
+    height: 1.7rem;
 }
 .addTask{
     width: 10%;
