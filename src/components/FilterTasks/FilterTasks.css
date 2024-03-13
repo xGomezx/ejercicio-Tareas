@@ -1,0 +1,14 @@
+.divContainer{
+    width:60%;
+    margin-top: 1.5rem;
+}
+.firstDiv{
+    width: 100%;
+    height: 18rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:  #1c1031 ;
+}

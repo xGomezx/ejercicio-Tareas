@@ -6,6 +6,8 @@ import { ContentDivs } from './components/ContentDivs/ContentDivs';
 import { AddTask } from './components/AddTask/AddTask';
 import { ShowTasks } from './components/ShowTasks/ShowTasks';
 import { Footer } from './components/layouts/Footer/Footer';
+import { Reminder } from './components/Reminder/Reminder';
+import { FilterTasks } from './components/FilterTasks/FilterTasks';
 
 function App() {
 
@@ -40,16 +42,18 @@ function App() {
         <ContentDivs>
           <AddTask /*onAddTask={handleAddTask}*/ />
         </ContentDivs>
+        <Reminder />
         <hr />
         <ContentDivs>
-
-          {tasks.map(item => (
-            <ShowTasks
-              key={item.idTask}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
+          <FilterTasks>
+            {tasks.map(item => (
+              <ShowTasks
+                key={item.idTask}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
+          </FilterTasks>
 
         </ContentDivs>
       </Main>
