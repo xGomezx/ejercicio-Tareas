@@ -1,7 +1,6 @@
 
 .titleShowTask{
-    color:  #ffff
-    ;
+    color:  #ffff;
     width: 85%;
     padding-left: 1rem;
 }
@@ -11,6 +10,9 @@
     max-height: 40%;
     text-align: center;
     color: #fff;
+    font-size: 1.7rem;
+    position: relative;
+    top: 0.3rem;
 }
 .file{
     width: 35%;
@@ -24,12 +26,17 @@
     font-size: 1.3rem;
     border-bottom:solid 1px white ;
 }
-.itemTask input{
-    width: 3rem;
+input[type='checkbox']{
+    width: 2.5rem;
 }
 .circle1{
     background-color: red;
+    position: relative;
+    top: 0.7rem;
     width: 2rem;
     height: 1rem;
     border-radius: 50%;
+}
+.circle2{
+    background-color: rgb(8, 199, 8);
 }

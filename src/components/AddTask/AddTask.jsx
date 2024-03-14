@@ -1,13 +1,15 @@
 import React, {useRef} from 'react'
 import './AddTask.css'
 
-export const AddTask = () => {
+export const AddTask = ({ onAddTask }) => {
 
 
   const newTitleRef = useRef('');
   const newDescriptionRef = useRef('');
 
-  const handleAddTask = () => {
+  const handleAddTask = (event) => {
+    event.preventDefault();
+
     const newTask = {
       title: newTitleRef.current.value,
       description: newDescriptionRef.current.value,

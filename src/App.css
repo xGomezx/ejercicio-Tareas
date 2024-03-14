@@ -25,3 +25,7 @@
   flex-flow: column wrap;
   align-items: center;
 }
+hr{
+  width: 90%;
+  margin-left: 5%;
+}

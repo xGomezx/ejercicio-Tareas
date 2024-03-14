@@ -12,32 +12,16 @@ import { FilterTasks } from './components/FilterTasks/FilterTasks';
 function App() {
 
   const [tasks, setTasks] = useState([
-    {
-      idTask: '1',
-      title: 'Bañarse',
-      description: 'Aseo personal'
-    },
-    {
-      idTask: '2',
-      title: 'Hacer tareas del sena',
-      description: 'Cumplir con las tareas'
-    },
-    {
-      idTask: '3',
-      title: 'Subir a challenger',
-      description: 'para dejar de ser noob como santiago'
-    },
-    {
-      idTask: '4',
-      title: 'Jugar project',
-      description: 'Andres no quiere jugar conmigo'
-    }
+   
   ]);
 
   const handleAddTask = (newTask) => {
+    console.log("Nueva tarea:", newTask);
     // Agrega la nueva tarea al estado
-    setTasks([...tasks, { ...newTask, idTask: (tasks.length + 1).toString() }]);
+    setTasks([...tasks, { ...newTask, idTask: (tasks.length + 1).toString(),statusTask:false }]);
+    console.log('tareas actualizadas:',tasks);
   };
+  console.log(tasks);
 
 
   return (
@@ -56,6 +40,8 @@ function App() {
                 key={item.idTask}
                 title={item.title}
                 description={item.description}
+                statusTask={item.statusTask}
+
               />
             ))}
           </FilterTasks>
