@@ -1,13 +1,4 @@
 
-.secondDiv{
-    width: 70%;
-    height: 90%;
-    background-color:  #1c1c24 ;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-}
 .titleShowTask{
     color:  #ffff
     ;
@@ -26,11 +17,19 @@
     margin-right: 1rem ;
     align-self: flex-end;
 }
-.listTasks{
-    width: 50rem;
-}
 .itemTask{
     display: flex;
-    width: 100%;
+    width: 90%;
     margin-top: 1rem;
+    font-size: 1.3rem;
+    border-bottom:solid 1px white ;
+}
+.itemTask input{
+    width: 3rem;
+}
+.circle1{
+    background-color: red;
+    width: 2rem;
+    height: 1rem;
+    border-radius: 50%;
 }

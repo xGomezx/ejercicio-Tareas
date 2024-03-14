@@ -13,7 +13,9 @@ export const FilterTasks = ({children}) => {
             </select>
         </div>
         <div className='firstDiv'>
-          {children}
+          <ul className='listTasks'>
+            {children}
+          </ul>
         </div>
     </div>
   )

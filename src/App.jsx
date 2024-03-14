@@ -26,13 +26,18 @@ function App() {
       idTask: '3',
       title: 'Subir a challenger',
       description: 'para dejar de ser noob como santiago'
+    },
+    {
+      idTask: '4',
+      title: 'Jugar project',
+      description: 'Andres no quiere jugar conmigo'
     }
   ]);
 
-  // const handleAddTask = (newTask) => {
-  //   // Agrega la nueva tarea al estado
-  //   setTasks([...tasks, { ...newTask, idTask: (tasks.length + 1).toString() }]);
-  // };
+  const handleAddTask = (newTask) => {
+    // Agrega la nueva tarea al estado
+    setTasks([...tasks, { ...newTask, idTask: (tasks.length + 1).toString() }]);
+  };
 
 
   return (
@@ -40,7 +45,7 @@ function App() {
       <Header />
       <Main>
         <ContentDivs>
-          <AddTask /*onAddTask={handleAddTask}*/ />
+          <AddTask onAddTask={handleAddTask} />
         </ContentDivs>
         <Reminder />
         <hr />
