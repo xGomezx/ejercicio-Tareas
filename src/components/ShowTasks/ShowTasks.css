@@ -1,8 +1,12 @@
 
 .titleShowTask{
     color:  #ffff;
-    width: 85%;
+    width: 50%;
     padding-left: 1rem;
+}
+.titleComplet{
+    text-decoration: line-through;
+    text-decoration-color:green ;
 }
 .descriptionShowTask{
     width: 95%;

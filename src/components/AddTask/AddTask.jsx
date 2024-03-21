@@ -1,35 +1,37 @@
-import React, {useRef} from 'react'
+import React, {useContext, useState} from 'react'
 import './AddTask.css'
+import { tasksContext } from '../Context/Context'
 
-export const AddTask = ({ onAddTask }) => {
 
+export const AddTask = () => {
+  const context = useContext(tasksContext)
+  const [titleTasks,setTitleTasks] = useState('')
+  const [desciptionTask,setDesciptionTask] = useState('')
 
-  const newTitleRef = useRef('');
-  const newDescriptionRef = useRef('');
+  const newTitle = (event)=> {setTitleTasks(event.target.value)}
+  const newDesciption = (event)=> {setDesciptionTask(event.target.value)}
+ 
 
-  const handleAddTask = (event) => {
-    event.preventDefault();
-
-    const newTask = {
-      title: newTitleRef.current.value,
-      description: newDescriptionRef.current.value,
-    };
-
-    // Llamamos a la función proporcionada desde App
-    onAddTask(newTask);
-
-    // Limpia el formulario después de agregar la tarea
-    newTitleRef.current.value = '';
-    newDescriptionRef.current.value = '';
-  };
+  const createTask = (event)=>{
+    const newId = context.tasks.length + 1;
+    event.preventDefault()
+     const newTask = {
+      id:newId,
+      title:titleTasks,
+      description:desciptionTask,
+      status:false
+     }
+     let listTasks = [...context.tasks,newTask]
+     context.setTasks(listTasks)
+  }
 
   return (
       <form action="" className='DivAddTask'>
           <label htmlFor="">Titulo tarea:</label>
-          <input ref={newTitleRef} className='titleTask' type="text" />
+          <input onChange={newTitle} className='titleTask' type="text" />
           <label htmlFor="">Descripcion de tarea:</label>
-          <input type='text' ref={newDescriptionRef} className='DesTask'></input>
-          <button onClick={handleAddTask} className='addTask'>Crear Tarea</button>
+          <input onChange={newDesciption} type='text'  className='DesTask'></input>
+          <button onClick={createTask} className='addTask'>Crear Tarea</button>
       </form>
   )
 }
