@@ -33,6 +33,8 @@
 input[type='checkbox']{
     width: 2.5rem;
 }
+
+
 .circle1{
     background-color: red;
     position: relative;
@@ -43,4 +45,17 @@ input[type='checkbox']{
 }
 .circle2{
     background-color: rgb(8, 199, 8);
+}
+
+@media(max-width:480px){
+    .titleShowTask{
+        font-size: 1.5rem;
+    }
+    .descriptionShowTask{
+        font-size: 1rem;
+    }
+    .circle1{
+        width: 1.5rem;
+        height: 0.7rem;
+    }
 }

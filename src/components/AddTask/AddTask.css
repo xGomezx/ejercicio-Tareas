@@ -35,8 +35,75 @@
     color:#340180 ;
     cursor: pointer;
 }
-label{
+.lblAdd{
     color: #fff;
     margin-top: 1rem;
     margin-right: 0.3rem;
+}
+
+@media(max-width: 1279px){
+    .DivAddTask{
+        width: 90%;
+        justify-content: flex-start;
+    }
+    .addTask{
+        width: 10rem;
+        margin-left: 22rem;
+        
+    }
+    .DesTask{
+        height: 1.5rem;
+        font-size: 1rem;
+        width: 14rem;
+    }
+    .titleTask{
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+    .lblAdd{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:920px){
+    .DivAddTask{
+        width: 95%;
+    }
+    .titleTask{
+        width: 10rem;
+    }
+    .DesTask{
+        width: 13rem;
+    }
+    .addTask{
+        margin-left: 18rem;
+    }
+}
+@media(max-width:768px){
+    .DivAddTask{
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .DesTask{
+        width: 13rem;
+    }
+    .addTask{
+        margin-left: 10rem;
+    }
+}
+
+@media(max-width:480px){
+    .DivAddTask{
+        width:80% ;
+    }
+    .titleTask{
+        width: 13rem;
+    }
+    .DesTask{
+        width: 15rem;
+    }
+    .addTask{
+        width: 7rem;
+        margin-left: 5rem;
+    }
 }

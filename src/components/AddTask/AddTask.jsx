@@ -27,9 +27,9 @@ export const AddTask = () => {
 
   return (
       <form action="" className='DivAddTask'>
-          <label htmlFor="">Titulo tarea:</label>
+          <label className='lblAdd' htmlFor="">Titulo tarea:</label>
           <input onChange={newTitle} className='titleTask' type="text" />
-          <label htmlFor="">Descripcion de tarea:</label>
+          <label className='lblAdd' htmlFor="">Descripcion de tarea:</label>
           <input onChange={newDesciption} type='text'  className='DesTask'></input>
           <button onClick={createTask} className='addTask'>Crear Tarea</button>
       </form>

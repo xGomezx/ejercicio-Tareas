@@ -1,4 +1,14 @@
 main{
     background: #340180;
-    height: 70%;
+    height: 73%;
+}
+@media(max-width:768px){
+    main{
+        height: 79%;
+    }   
+}
+@media(max-width:480px){
+    main{
+        height: 80%;
+    }
 }

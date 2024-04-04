@@ -25,7 +25,7 @@ export const Home = () => {
           <ContentDivs>
             <FilterTasks>
               {
-                otherContext.tasks.map( (task,index) => (<ShowTasks key={task.title+index} title={task.title} id={task.id} description={task.description}/>))
+                otherContext.filterSelect.map( (task,index) => (<ShowTasks checked={task.status}  key={task.title+task.id} title={task.title} id={task.id} description={task.description}/>))
               }
             </FilterTasks>
   

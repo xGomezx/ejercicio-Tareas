@@ -7,8 +7,8 @@ export const Reminder = () => {
   const reminderContext = useContext(tasksContext)
 
   return(
-    <div>
-        <p className='reminder'>Usted tiene {reminderContext.completed} tareas completadas y {reminderContext.earrings} tareas pendientes</p>
+    <div className='reminderContent'>
+        <p className='reminder'>Usted tiene <p className='reminderCompleted'> {reminderContext.completed}</p> tareas completadas y <p className='reminderEarrings'> {reminderContext.earrings} </p> tareas pendientes</p>
     </div>
   )
 }

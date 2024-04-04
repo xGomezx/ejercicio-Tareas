@@ -8,7 +8,7 @@
 }
 .firstDiv{
     width: 60rem;
-    max-height: 25rem;
+    max-height: 35vh;
     margin-top: 1rem;
     display: flex;
     flex-flow: column wrap;
@@ -36,12 +36,52 @@
     flex-flow: column wrap;
     align-items: center;
 }
-label{
+.lblFilter{
     font-size: 2rem;
+    color: white;
+    padding-right: 0.5rem;
 }
 select{
     font-size: 1.2rem;
 }
 option{
     font-size: 1.2rem;
+}
+
+@media(max-width:1280px){
+    .firstDiv{
+        max-height: 45vh;
+    }
+}
+@media(max-width: 1279px){
+    .firstDiv{
+        width: 50rem;
+        max-height: 18rem;
+    }
+    .lblFilter{
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width:920px){
+    .firstDiv{
+        width:45rem ;
+    }
+}
+
+@media(max-width:768px){
+    .firstDiv{
+        width: 29rem;
+        max-height: 17rem;
+    }
+    .listTasks{
+        width: 100%;
+    }
+}
+
+@media(max-width:480px){
+    .firstDiv{
+        width: 21.5rem;
+        max-height: 18rem;
+    }
 }
